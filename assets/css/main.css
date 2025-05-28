@@ -3685,3 +3685,19 @@ section,
 #historia .uppercase-on-demand {
   text-transform: uppercase;
 }
+.btn-carmim {
+  background-color: #960018;  /* carmim escuro */
+  border-color:    #960018;
+  color:           #fff;
+}
+.btn-carmim:hover,
+.btn-carmim:focus {
+  background-color: #7a0012;
+  border-color:    #7a0012;
+  color:           #fff;
+}
+
+/* Cor oficial da GLMMRJ */
+.bg-glmm {
+  background-color: #132659;  /* troque pelo tom exato que quiser */
+}
