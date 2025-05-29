@@ -70,9 +70,10 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#quem">Quem Somos</a></li>
             <li><a href="#grau">O que é o Grau</a></li>
-            <li><a href="#participar">Como Participar?</a></li>
             <li><a href="#historia">História</a></li>
             <li><a href="#autoridades">Autoridades</a></li>
+            <li><a href="#participar">Como Participar?</a></li>
+       
             <li><a href="gallery.html">Galeria</a></li>
             <li><a href="lojas.html">Lojas</a></li>
             <li><a href="contact.html">Contato</a></li>
@@ -91,7 +92,7 @@
   <div class="container-fluid container-xl">
     <div class="row align-items-center justify-content-between">
       <!-- TEXTO (ocupa ~2/3 no lg) -->
-      <div class="col-lg-8">
+      <div class="col-lg-8 text-animate">
         <h1 class="text-white mb-2">Mestres Maçons da Marca</h1>
         <p class="text-white mb-0">
           Grande Loja de Mestres Maçons da Marca do Rio de Janeiro
@@ -102,7 +103,7 @@
         <img
           src="assets/img/logo.png"
           alt="Logo GLMMRJ"
-          class="img-fluid"
+          class="img-fluid logo-fade"
           style="max-width:180px;"
         >
       </div>
@@ -111,41 +112,50 @@
 </section>
 
 
-   <!-- Blog Hero Section -->
-  <section id="blog-hero" class="blog-hero section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+<!-- Quem Somos + Nossa Missão -->
+<section id="quem" class="blog-hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
     <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
 
-  <div class="container section-title" data-aos="fade-up">
+      <!-- Coluna de textos -->
+      <div class="col-lg-8">
+
+        <!-- Quem Somos -->
+        <div class="container section-title" data-aos="fade-up">
           <h2>Quem</h2>
           <div>
-             <span>Somos</span> <span class="description-title"></span>
+            <span>Somos</span>
+            <span class="description-title"></span>
           </div>
+          <p class="lead">
+            A Grande Loja de Mestres da Marca do Estado do Rio de Janeiro é uma potência maçônica independente, dedicada a preservar e transmitir os ensinamentos e simbolismos desse importante grau da Maçonaria.
+          </p>
+          <p class="lead">
+            Fundada com o compromisso de manter os antigos landmarks e tradições, nossa Grande Loja reúne Lojas de Marca em todo o Estado do Rio de Janeiro, promovendo o aperfeiçoamento do Mestre Maçom através dos princípios e ensinamentos do Grau da Marca.
+          </p>
+        </div>
 
-     
-        <p class="lead">
-          A Grande Loja de Mestres da Marca do Estado do Rio de Janeiro é uma potência maçônica independente, dedicada a preservar e transmitir os ensinamentos e simbolismos desse importante grau da Maçonaria.
-        </p>
-        <p class="lead">
-          Fundada com o compromisso de manter os antigos landmarks e tradições, nossa Grande Loja reúne Lojas de Marca em todo o Estado do Rio de Janeiro, promovendo o aperfeiçoamento do Mestre Maçom através dos princípios e ensinamentos do Grau da Marca.
-        </p>
-        <br>
-        
+        <!-- Nossa Missão -->
         <div class="container section-title" data-aos="fade-up">
-        <h2>Nossa</h2>
-         <div>
-             <span>Missão</span> <span class="description-title"></span>
+          <h2>Nossa</h2>
+          <div>
+            <span>Missão</span>
+            <span class="description-title"></span>
           </div>
-        <p class="lead">
-          "Preservar os antigos landmarks, promover o aperfeiçoamento do Mestre Maçom e a prática dos princípios da Marca, intensificando os laços de fraternidade e solidariedade entre todos os Irmãos."
-        </p>
-      </div>
+          <p class="lead">
+            Preservar os antigos landmarks, promover o aperfeiçoamento do Mestre Maçom e a prática dos princípios da Marca, intensificando os laços de fraternidade e solidariedade entre todos os Irmãos.
+          </p>
+        </div>
+
       </div>
 
+      <!-- Coluna da imagem -->
       <div class="content-right position-relative zoom-hover" data-aos="zoom-in" data-aos-delay="300">
-        <img src="assets/img/blog/blog-post-portrait-1.png" alt="Digital Platform" class="img-fluid rounded-4">
-        
+        <img src="assets/img/blog/blog-post-portrait-1.png"
+             alt="Digital Platform"
+             class="img-fluid rounded-4">
       </div>
 
       <div class="decoration">
@@ -156,21 +166,21 @@
     </div>
   </div>
 </section>
-<section id="blog-hero" class="blog-hero section">
+
+<!-- Simbologia da Marca -->
+<section id="simbologia" class="blog-hero section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row align-items-center g-4">
-      
-      <!-- Coluna da imagem -->
+
+      <!-- Imagem -->
       <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-        <img
-          src="assets/img/blog/blog-post-9.jpg"
-          alt="Blog Image"
-          class="img-fluid rounded-4 shadow-sm"
-          style="object-fit: cover; width:100%; height:auto;"
-        >
+        <img src="assets/img/blog/blog-post-9.jpg"
+             alt="Marca Maçônica"
+             class="img-fluid rounded-4 shadow-sm"
+             style="object-fit: cover; width:100%; height:auto;">
       </div>
-      
-     <!-- Coluna do texto, idêntica a “Nossa Missão” -->
+
+      <!-- Texto -->
       <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
         <div class="container section-title" data-aos="fade-up">
           <h2>Simbologia</h2>
@@ -186,24 +196,65 @@
         </div>
       </div>
 
-    </div><!-- /.row -->
-  </div><!-- /.container -->
+    </div>
+  </div>
 </section>
 <!-- Category Section Section -->
-    <section id="category-section" class="category-section section">
+   <section
+  id="grau"
+  class="category-section section bg-grafite-claro"
+>
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-          <h2>O que é</h2>
-          <div>
-             <span>o Grau </span> <span class="description-title">da Marca?</span>
-          </div>
-          <p class="lead">
-            O Grau da Marca é um dos mais antigos e importantes graus da Maçonaria, complementando os ensinamentos recebidos nos três graus da Loja Simbólica. Ele aprofunda o conhecimento do Mestre Maçom através de um simbolismo rico e significativo, centrado na construção do Templo de Salomão.
-            Neste grau, o Mestre Maçom aprende a importância da marca pessoal – simbolizando sua identidade única e sua contribuição para o grande trabalho maçônico. A pedra angular e a pedra cúbica com marca são símbolos centrais que representam o aperfeiçoamento pessoal e a integração do indivíduo na grande obra coletiva.
-          </p>
-      </div><!-- End Section Title -->
+  <section
+  id="grau"
+  class="category-section section bg-grafite-claro"
+>
+  <div class="container section-title" data-aos="fade-up">
+    <h2>O que é</h2>
+    <div>
+      <span>o Grau</span>
+      <span class="description-title">da Marca?</span>
+    </div>
 
+    <!-- 1) Parágrafo inicial, acima da área de vídeo+texto -->
+   
+
+    <!-- 2) Linha com duas colunas: vídeo à esquerda e texto “Neste grau…” à direita -->
+    <div class="row align-items-center my-4">
+      <!-- Vídeo -->
+      <div class="col-md-6">
+        <div class="video-wrapper">
+          <video
+            src="assets/film/marca-f1.mp4"
+            class="bg-video"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="blur-circle"></div>
+        </div>
+      </div>
+      <!-- Texto explicativo -->
+      <div class="col-md-6">
+        <p class="lead">
+           
+            O Grau da Marca é um dos mais antigos e importantes graus da Maçonaria,
+      complementando os ensinamentos recebidos nos três graus da Loja Simbólica.
+      Ele aprofunda o conhecimento do Mestre Maçom através de um simbolismo rico
+      e significativo, centrado na construção do Templo de Salomão.
+        </br>
+          Neste grau, o Mestre Maçom aprende a importância da marca pessoal –
+          simbolizando sua identidade única e sua contribuição para o grande
+          trabalho maçônico. A pedra angular e a pedra cúbica com marca são símbolos
+          centrais que representam o aperfeiçoamento pessoal e a integração do
+          indivíduo na grande obra coletiva.
+        </p>
+      </div>
+    </div>
+    
+  </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <!-- Featured Posts -->
         <div class="row gy-4 mb-4">
@@ -261,8 +312,7 @@
         </div>
 
        
-    </section><!-- /Category Section Section -->
-    <!-- Featured Posts Section -->
+    </section>
    
 <section id="historia" class="section">
    <div class="container section-title" data-aos="fade-up">
@@ -327,7 +377,7 @@
 
  
 <!-- Call To Action 2 Section -->
-    <section id="call-to-action-2" class="call-to-action-2 section">
+    <section id="participar" class="call-to-action-2 section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -364,9 +414,6 @@
           <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
             <img src="assets/img/misc/misc-1.png" alt="Digital Platform" class="img-fluid rounded-4">
             <div class="floating-card">
-              <div class="card-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
               
             </div>
           </div>
@@ -381,7 +428,7 @@
       </div>
 
     </section><!-- /Call To Action 2 Section -->
- <section id="featured-posts" class="featured-posts section">
+ <section id="autoridades" class="featured-posts section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -541,6 +588,11 @@
         </script>
         <div class="swiper-wrapper align-items-center">
           <div class="swiper-slide">
+            <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg">
+              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
             <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg">
               <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
             </a>
@@ -615,21 +667,20 @@
         <div class="col-lg-2 col-md-2 footer-links">
           <h4>Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">O que é o Grau</a></li>
-            <li><a href="#">Como Participar</a></li>
-            <li><a href="#">História</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#quem">Quem Somos</a></li>
+            <li><a href="#grau">O que é o Grau</a></li>
+            <li><a href="#participar">Como Participar</a></li>
+            <li><a href="#historia">História</a></li>
           </ul>
         </div>
          <div class="col-lg-2 col-md-2 footer-links">
           <h4>Outros Links</h4>
           <ul>
-            <li><a href="#">GLMMRJ</a></li>
-            <li><a href="#">GLMMIG</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="lojas.html">Lojas</a></li>
+            <li><a href="#autoridade">Autoridades</a></li>
+             <li><a href="contact.html">Contato</a></li>
           </ul>
         </div>
 
@@ -639,9 +690,8 @@
           <ul>
             <li><a href="#">GLMMRJ</a></li>
             <li><a href="#">GLMMIG</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="#">GLUE</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
         </div>
 
