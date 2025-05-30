@@ -3766,49 +3766,60 @@ section,
 .bg-grafite-claro {
   background-color: #ececec;
 }
+.lead {
+  text-transform: none;
+}
 
-/* vídeo responsivo + blur no hover */
-.bg-video {
+/* Estilo para o logotipo com efeito de zoom */
+.logo-fade {
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 3px solid transparent;
+  border-radius: 12px;
+}
+
+.logo-fade:hover {
+  transform: scale(1.1);
+  border-color: #960018; /* Carmim */
+}
+.video-glass-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.video-glass-container:hover {
+  transform: scale(1.03);
+}
+
+.video-glass-element {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
-  object-fit: cover;
-  filter: blur(0);
-  transition: filter 0.3s ease;
+  border-radius: 20px;
+  z-index: 1;
 }
 
-.bg-video:hover {
-  filter: blur(5px);
-}
-/* video-wrapper: permite que o vídeo apareça inteiro */
-#grau .video-wrapper {
-  position: relative;
-  margin: 2rem 0;
-  overflow: visible;    /* antes era hidden */
-  width: 100%;
-  /* remova ou ajuste esta linha se existir:
-  max-height: 400px;
-  */
-}
-
-/* vídeo responsivo, inteiro e centralizado */
-#grau .video-wrapper .bg-video {
-  width: 100%;          /* preenche a largura disponível */
-  height: auto;         /* mantém a proporção original */
-  object-fit: contain;  /* mostra o vídeo inteiro, com “letterbox” se necessário */
-  object-position: center center; /* centraliza o conteúdo */
-}
-
-/* círculo de blur que vai seguir o mouse */
-#grau .video-wrapper .blur-circle {
+.glass-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(150, 0, 24, 0.25), rgba(0, 123, 255, 0.25));
+  border: 2px solid rgba(150, 0, 24, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  z-index: 2;
   pointer-events: none;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  opacity: 0.7;
-  transform: translate(-50%, -50%);
-  transition: width 0.15s ease, height 0.15s ease;
+}
+
+.video-glass-container:hover .glass-overlay {
+  opacity: 1;
+  border-color: rgba(150, 0, 24, 1); /* cor carmim vibrante no hover */
 }
