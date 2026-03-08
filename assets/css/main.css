@@ -1079,6 +1079,25 @@ section,
   position: relative;
 }
 
+.featured-posts .authority-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-posts .authority-photo {
+  width: min(100%, 420px);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+
+.featured-posts .authority-photo-wrap .swiper-wrapper,
+.featured-posts .authority-photo-wrap .swiper-slide,
+.featured-posts .authority-photo-wrap .blog-post-item,
+.featured-posts .authority-photo-wrap .blog-post-content {
+  display: none !important;
+}
+
 .featured-posts .blog-posts-slider .swiper-wrapper {
   height: auto !important;
 }
@@ -2231,56 +2250,17 @@ section,
 }
 
 .blog-author .author-img {
-  width: 150px;
-  height: 150px;
+  width: min(100%, 260px);
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 4px solid var(--surface-color);
+  border-radius: 18px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .blog-author .author-img:hover {
   transform: scale(1.05);
-}
-
-.blog-author .author-social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
-  color: var(--accent-color);
-  margin: 0 5px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.blog-author .author-social-links a:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: translateY(-3px);
-}
-
-.blog-author .author-social-links a.linkedin:hover {
-  background-color: #0077b5;
-}
-
-.blog-author .author-social-links a.twitter:hover {
-  background-color: #000000;
-}
-
-.blog-author .author-social-links a.github:hover {
-  background-color: #333333;
-}
-
-.blog-author .author-social-links a.facebook:hover {
-  background-color: #1877f2;
-}
-
-.blog-author .author-social-links a.instagram:hover {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 .blog-author .author-content {
@@ -2311,44 +2291,10 @@ section,
 }
 
 .blog-author .author-content .author-bio {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.8;
   color: var(--default-color);
   margin: 1rem 0;
-}
-
-.blog-author .author-content .author-website {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 767.98px) {
-  .blog-author .author-content .author-website {
-    justify-content: center;
-  }
-}
-
-.blog-author .author-content .author-website a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-  color: var(--accent-color);
-  transition: all 0.3s ease;
-}
-
-.blog-author .author-content .author-website a i {
-  font-size: 1.1rem;
-}
-
-.blog-author .author-content .author-website a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  transform: translateX(3px);
-}
-
-.blog-author .author-content .author-website .more-posts {
-  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -3697,7 +3643,7 @@ section,
   color:           #fff;
 }
 
-/* Cor oficial da GLMMRJ */
+/* Cor oficial da GLMMMES */
 .bg-glmm {
   background-color: #132659;  /* troque pelo tom exato que quiser */
 }
